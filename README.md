@@ -41,5 +41,36 @@ $ go get google.golang.org/protobuf/cmd/protoc-gen-go \
 
 ## Usage
 
-(todo)
+#### Step1
+
+編輯proto檔，syntax使用proto3(最多人使用)，message則是server或client拿到的資料格式，可以想像成有型態的json， service則是像一個interface，定義了這個服務應該有的溝通方式卻不實現
+
+```proto
+syntax = "proto3";
+
+package calculator;
+option go_package = "proto/calculator";
+
+message CalculatorRequest {
+  int64 a = 1;
+  int64 b = 2;
+}
+
+message CalculatorResponse {
+  int64 result = 1;
+}
+
+service CalculatorService {
+  rpc Sum(CalculatorRequest) returns (CalculatorResponse) {};
+}
+```
+
+#### Step2
+編譯proto檔，假設我們現在要做的是編譯出一個以go語言開發的server端服務
+
+```bash
+$ protoc --go_out=. --go_opt=paths=source_relative \
+    --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+    {path/to/protofile}
+```
 
