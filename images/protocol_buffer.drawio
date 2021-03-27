@@ -1,0 +1,28 @@
+<mxfile host="app.diagrams.net" modified="2021-03-27T11:06:23.091Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="PHd4ZgDZhdZ7spRH5qiB" version="14.5.3" type="github">
+  <diagram id="19iYjF7CPZzja7_KVYLb" name="Page-1">
+    <mxGraphModel dx="981" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="0EW2RadKRIt1BQLYg2rv-1" target="0EW2RadKRIt1BQLYg2rv-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="0EW2RadKRIt1BQLYg2rv-1" target="0EW2RadKRIt1BQLYg2rv-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-1" value="{Service}.proto" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.file_2;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="160" y="230" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-2" value="{Service}.pb.go" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.code_file;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="510" y="160" width="72" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-3" value="{Service}_grpc.pb.go" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.code_file;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="510" y="290" width="72" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0EW2RadKRIt1BQLYg2rv-6" value="$ protoc {Service}.proto ...." style="text;html=1;strokeColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fillColor=#000000;fontColor=#00CC00;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

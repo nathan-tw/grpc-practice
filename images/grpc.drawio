@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" modified="2021-03-27T10:40:26.153Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Safari/537.36" etag="LGe_V82d--DewfkI39j5" version="14.5.3" type="github">
+  <diagram id="YNlExD2vWMM98IjgDTQW" name="Page-1">
+    <mxGraphModel dx="981" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-2" value="Server" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="610" y="440" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classicThin;startFill=1;fontSize=18;" edge="1" parent="1" source="D2p6EjZv4XsFwHQcXLCd-3" target="D2p6EjZv4XsFwHQcXLCd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-22" value="request and response" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="D2p6EjZv4XsFwHQcXLCd-21">
+          <mxGeometry x="0.1135" y="-2" relative="1" as="geometry">
+            <mxPoint x="-16" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-3" value="Client" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.laptop;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="440" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-6" value="用來描述資料交換的方式(類別及函式)" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="336.92" y="360" width="190" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="D2p6EjZv4XsFwHQcXLCd-8" target="D2p6EjZv4XsFwHQcXLCd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-12" value="compile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="D2p6EjZv4XsFwHQcXLCd-11">
+          <mxGeometry x="-0.0526" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="D2p6EjZv4XsFwHQcXLCd-8" target="D2p6EjZv4XsFwHQcXLCd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-14" value="compile" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" vertex="1" connectable="0" parent="D2p6EjZv4XsFwHQcXLCd-13">
+          <mxGeometry x="-0.1107" y="3" relative="1" as="geometry">
+            <mxPoint x="-1.5" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-8" value="{service}.proto file" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.file_2;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="401" y="270" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="D2p6EjZv4XsFwHQcXLCd-9" target="D2p6EjZv4XsFwHQcXLCd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-9" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.code_file;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="166.25" y="350" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="D2p6EjZv4XsFwHQcXLCd-10" target="D2p6EjZv4XsFwHQcXLCd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-10" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.code_file;pointerEvents=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="636.25" y="350" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-19" value="client和server都將根據這個proto檔編譯出屬於各自語言的檔案，假如server用go則編譯出.pb.go的檔案" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;shadow=0;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="135" width="235" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-23" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://img2018.cnblogs.com/blog/1377250/202002/1377250-20200215213950697-1799658107.png;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="323" y="140" width="203.92" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="D2p6EjZv4XsFwHQcXLCd-24" value="1. 編輯proto檔&lt;br&gt;2. 編譯Server&amp;amp;Client&lt;br&gt;3. import編譯出來的檔案並實現服務" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=18;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="170" width="200" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
