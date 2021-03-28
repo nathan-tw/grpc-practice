@@ -105,10 +105,10 @@ func (*Server) Sum(ctx context.Context, req *calculatorPB.CalculatorRequest) (*c
 使用grpc server的sdk
 
 ```bash
-$ go get
+$ go get google.golang.org/grpc
 ```
 
-啟動server就完成嘍，可以使用bloomrpc
+啟動server就完成嘍，可以使用bloomrpc測試，就如同我們常用postman測試http1.1一樣。
 
 ```go
 func main() {
