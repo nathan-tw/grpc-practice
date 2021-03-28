@@ -73,4 +73,57 @@ $ protoc --go_out=. --go_opt=paths=source_relative \
     --go-grpc_out=. --go-grpc_opt=paths=source_relative \
     {path/to/protofile}
 ```
+如前所述，這會產生兩個檔案，以server端為例，我會有兩個動作需要做：
 
+* 實做一個server type並組合(類似繼承)Unimplemented{Service}ServiceServer
+* 實現該type有的function
+
+以我的加法計算為例：
+
+```go
+type Server struct{
+	calculatorPB.UnimplementedCalculatorServiceServer // import from file compiled from proto file
+}
+
+func (*Server) Sum(ctx context.Context, req *calculatorPB.CalculatorRequest) (*calculatorPB.CalculatorResponse, error) {
+	fmt.Printf("Sum function is invoked with %v \n", req)
+
+	a := req.GetA()
+	b := req.GetB()
+
+	res := &calculatorPB.CalculatorResponse{
+		Result: a + b,
+	}
+
+	return res, nil
+
+}
+```
+
+#### Step3
+
+使用grpc server的sdk
+
+```bash
+$ go get
+```
+
+啟動server就完成嘍，可以使用bloomrpc
+
+```go
+func main() {
+	fmt.Println("starting gRPC server")
+	lis, err := net.Listen("tcp", "localhost:50051")
+	if err != nil {
+		panic(err)
+	}
+
+	grpcServer := grpc.NewServer()
+	calculatorPB.RegisterCalculatorServiceServer(grpcServer, &Server{})
+
+	if err := grpcServer.Serve(lis); err != nil {
+		panic(err)
+	}
+
+}
+```
